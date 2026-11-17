@@ -117,7 +117,7 @@
         <div class="hero-bottom container">
           <span>SCROLL TO EXPLORE</span><span class="scroll-line"></span
           ><span class="hero-bottom-note"
-            >A little joy, one bite at a time. Bite   Eat   Repeat</span
+            >A little joy, one bite at a time. Bite Eat Repeat</span
           >
         </div>
       </section>
@@ -130,7 +130,7 @@
           <div class="section-heading compact-heading">
             <div>
               <div class="eyebrow">WHAT ARE YOU CRAVING?</div>
-              <h2 id="categoryTitle">Explore by   <em>  Category</em></h2>
+              <h2 id="categoryTitle">Explore by <em> Category</em></h2>
             </div>
             <a class="text-link" href="#menu">View full menu <span>↗</span></a>
           </div>
@@ -138,7 +138,40 @@
             class="category-grid"
             id="categoryGrid"
             aria-label="Food categories"
-          ></div>
+          >
+            <button class="category-card" data-category="Burgers">
+              <span class="category-emoji" aria-hidden="true">🍔</span
+              ><span>Burgers</span>
+            </button>
+            <button class="category-card" data-category="Pizza">
+              <span class="category-emoji" aria-hidden="true">🍕</span
+              ><span>Pizza</span>
+            </button>
+            <button class="category-card" data-category="Indian Food">
+              <span class="category-emoji" aria-hidden="true">🍛</span
+              ><span>Indian Food</span>
+            </button>
+            <button class="category-card" data-category="Biryani">
+              <span class="category-emoji" aria-hidden="true">🍚</span
+              ><span>Biryani</span>
+            </button>
+            <button class="category-card" data-category="Chinese Food">
+              <span class="category-emoji" aria-hidden="true">🥡</span
+              ><span>Chinese Food</span>
+            </button>
+            <button class="category-card" data-category="Snacks">
+              <span class="category-emoji" aria-hidden="true">🍟</span
+              ><span>Snacks</span>
+            </button>
+            <button class="category-card" data-category="Desserts">
+              <span class="category-emoji" aria-hidden="true">🍰</span
+              ><span>Desserts</span>
+            </button>
+            <button class="category-card" data-category="Beverages">
+              <span class="category-emoji" aria-hidden="true">🥤</span
+              ><span>Beverages</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -157,7 +190,212 @@
               >Explore Everything! <span>↗</span></a
             >
           </div>
-          <div class="product-grid featured-grid" id="featuredGrid"></div>
+          <div class="product-grid featured-grid" id="featuredGrid">
+            <article
+              class="product-card"
+              data-id="burger-smash"
+              data-name="Smash House Burger"
+              data-description="Double smash patty, aged cheddar, house sauce."
+              data-price="289"
+              data-rating="4.6"
+              data-category="Burgers"
+              data-badge="Bestseller"
+              data-image="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=82"
+              data-featured="true"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=82"
+                  alt="Smash House Burger"
+                  loading="lazy"
+                />
+                <span class="product-badge">Bestseller</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="burger-smash"
+                  aria-label="Add Smash House Burger to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Burgers</span
+                  ><span class="product-rating"><span>★</span> 4.6</span>
+                </div>
+                <h3 class="product-title">Smash House Burger</h3>
+                <p class="product-description">
+                  Double smash patty, aged cheddar, house sauce.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹289</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="burger-smash"
+                    aria-label="Add Smash House Burger to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="pizza-margherita"
+              data-name="Sunday Margherita"
+              data-description="San Marzano tomato, milky mozzarella, basil."
+              data-price="349"
+              data-rating="4.5"
+              data-category="Pizza"
+              data-badge="Wood fired"
+              data-image="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=82"
+              data-featured="true"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=82"
+                  alt="Sunday Margherita"
+                  loading="lazy"
+                />
+                <span class="product-badge">Wood fired</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="pizza-margherita"
+                  aria-label="Add Sunday Margherita to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Pizza</span
+                  ><span class="product-rating"><span>★</span> 4.5</span>
+                </div>
+                <h3 class="product-title">Sunday Margherita</h3>
+                <p class="product-description">
+                  San Marzano tomato, milky mozzarella, basil.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹349</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="pizza-margherita"
+                    aria-label="Add Sunday Margherita to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="biryani-dum"
+              data-name="Dum Chicken Biryani"
+              data-description="Long-grain basmati, slow-cooked dum style."
+              data-price="319"
+              data-rating="4.9"
+              data-category="Biryani"
+              data-badge="Bestseller"
+              data-image="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=700&q=82"
+              data-featured="true"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=700&q=82"
+                  alt="Dum Chicken Biryani"
+                  loading="lazy"
+                />
+                <span class="product-badge">Bestseller</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="biryani-dum"
+                  aria-label="Add Dum Chicken Biryani to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Biryani</span
+                  ><span class="product-rating"><span>★</span> 4.9</span>
+                </div>
+                <h3 class="product-title">Dum Chicken Biryani</h3>
+                <p class="product-description">
+                  Long-grain basmati, slow-cooked dum style.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹319</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="biryani-dum"
+                    aria-label="Add Dum Chicken Biryani to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="snacks-fries"
+              data-name="Truffle Parmesan Fries"
+              data-description="Crispy fries, truffle oil, shaved parmesan."
+              data-price="179"
+              data-rating="4.8"
+              data-category="Snacks"
+              data-badge="Crowd pleaser"
+              data-image="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=82"
+              data-featured="true"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=82"
+                  alt="Truffle Parmesan Fries"
+                  loading="lazy"
+                />
+                <span class="product-badge">Crowd pleaser</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="snacks-fries"
+                  aria-label="Add Truffle Parmesan Fries to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Snacks</span
+                  ><span class="product-rating"><span>★</span> 4.8</span>
+                </div>
+                <h3 class="product-title">Truffle Parmesan Fries</h3>
+                <p class="product-description">
+                  Crispy fries, truffle oil, shaved parmesan.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹179</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="snacks-fries"
+                    aria-label="Add Truffle Parmesan Fries to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -199,7 +437,35 @@
               class="filter-chips"
               id="filterChips"
               aria-label="Filter menu by category"
-            ></div>
+            >
+              <button class="filter-chip active" data-category="All">
+                ✦ All
+              </button>
+              <button class="filter-chip" data-category="Burgers">
+                🍔 Burgers
+              </button>
+              <button class="filter-chip" data-category="Pizza">
+                🍕 Pizza
+              </button>
+              <button class="filter-chip" data-category="Indian Food">
+                🍛 Indian Food
+              </button>
+              <button class="filter-chip" data-category="Biryani">
+                🍚 Biryani
+              </button>
+              <button class="filter-chip" data-category="Chinese Food">
+                🥡 Chinese Food
+              </button>
+              <button class="filter-chip" data-category="Snacks">
+                🍟 Snacks
+              </button>
+              <button class="filter-chip" data-category="Desserts">
+                🍰 Desserts
+              </button>
+              <button class="filter-chip" data-category="Beverages">
+                🥤 Beverages
+              </button>
+            </div>
             <button
               class="wishlist-filter"
               id="wishlistFilter"
@@ -209,7 +475,1232 @@
             </button>
           </div>
           <p class="results-line" id="resultsLine" aria-live="polite"></p>
-          <div class="product-grid" id="productGrid"></div>
+          <div class="product-grid" id="productGrid">
+            <article
+              class="product-card"
+              data-id="burger-smash"
+              data-name="Smash House Burger"
+              data-description="Double smash patty, aged cheddar, house sauce."
+              data-price="289"
+              data-rating="4.6"
+              data-category="Burgers"
+              data-badge="Bestseller"
+              data-image="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=82"
+              data-featured="true"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=82"
+                  alt="Smash House Burger"
+                  loading="lazy"
+                />
+                <span class="product-badge">Bestseller</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="burger-smash"
+                  aria-label="Add Smash House Burger to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Burgers</span
+                  ><span class="product-rating"><span>★</span> 4.6</span>
+                </div>
+                <h3 class="product-title">Smash House Burger</h3>
+                <p class="product-description">
+                  Double smash patty, aged cheddar, house sauce.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹289</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="burger-smash"
+                    aria-label="Add Smash House Burger to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="burger-seoul"
+              data-name="Seoul Crunch"
+              data-description="Korean crispy chicken, slaw, gochujang mayo."
+              data-price="259"
+              data-rating="4.8"
+              data-category="Burgers"
+              data-badge="Fan favourite"
+              data-image="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=82"
+                  alt="Seoul Crunch"
+                  loading="lazy"
+                />
+                <span class="product-badge">Fan favourite</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="burger-seoul"
+                  aria-label="Add Seoul Crunch to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Burgers</span
+                  ><span class="product-rating"><span>★</span> 4.8</span>
+                </div>
+                <h3 class="product-title">Seoul Crunch</h3>
+                <p class="product-description">
+                  Korean crispy chicken, slaw, gochujang mayo.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹259</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="burger-seoul"
+                    aria-label="Add Seoul Crunch to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="burger-garden"
+              data-name="Garden Party Burger"
+              data-description="Grilled veg patty, avocado, herby yoghurt."
+              data-price="229"
+              data-rating="4.7"
+              data-category="Burgers"
+              data-badge="Veggie"
+              data-image="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=700&q=82"
+                  alt="Garden Party Burger"
+                  loading="lazy"
+                />
+                <span class="product-badge">Veggie</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="burger-garden"
+                  aria-label="Add Garden Party Burger to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Burgers</span
+                  ><span class="product-rating"><span>★</span> 4.7</span>
+                </div>
+                <h3 class="product-title">Garden Party Burger</h3>
+                <p class="product-description">
+                  Grilled veg patty, avocado, herby yoghurt.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹229</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="burger-garden"
+                    aria-label="Add Garden Party Burger to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="pizza-margherita"
+              data-name="Sunday Margherita"
+              data-description="San Marzano tomato, milky mozzarella, basil."
+              data-price="349"
+              data-rating="4.5"
+              data-category="Pizza"
+              data-badge="Wood fired"
+              data-image="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=82"
+              data-featured="true"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=82"
+                  alt="Sunday Margherita"
+                  loading="lazy"
+                />
+                <span class="product-badge">Wood fired</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="pizza-margherita"
+                  aria-label="Add Sunday Margherita to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Pizza</span
+                  ><span class="product-rating"><span>★</span> 4.5</span>
+                </div>
+                <h3 class="product-title">Sunday Margherita</h3>
+                <p class="product-description">
+                  San Marzano tomato, milky mozzarella, basil.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹349</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="pizza-margherita"
+                    aria-label="Add Sunday Margherita to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="pizza-pepperoni"
+              data-name="Pepperoni Party"
+              data-description="Crispy pepperoni, mozzarella, chilli honey."
+              data-price="429"
+              data-rating="4.4"
+              data-category="Pizza"
+              data-badge="Bestseller"
+              data-image="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=82"
+                  alt="Pepperoni Party"
+                  loading="lazy"
+                />
+                <span class="product-badge">Bestseller</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="pizza-pepperoni"
+                  aria-label="Add Pepperoni Party to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Pizza</span
+                  ><span class="product-rating"><span>★</span> 4.4</span>
+                </div>
+                <h3 class="product-title">Pepperoni Party</h3>
+                <p class="product-description">
+                  Crispy pepperoni, mozzarella, chilli honey.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹429</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="pizza-pepperoni"
+                    aria-label="Add Pepperoni Party to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="pizza-paneer"
+              data-name="Tandoori Paneer Pizza"
+              data-description="Smoky paneer, red onion, mint drizzle."
+              data-price="389"
+              data-rating="4.5"
+              data-category="Pizza"
+              data-badge="Spicy"
+              data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=82"
+                  alt="Tandoori Paneer Pizza"
+                  loading="lazy"
+                />
+                <span class="product-badge">Spicy</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="pizza-paneer"
+                  aria-label="Add Tandoori Paneer Pizza to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Pizza</span
+                  ><span class="product-rating"><span>★</span> 4.5</span>
+                </div>
+                <h3 class="product-title">Tandoori Paneer Pizza</h3>
+                <p class="product-description">
+                  Smoky paneer, red onion, mint drizzle.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹389</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="pizza-paneer"
+                    aria-label="Add Tandoori Paneer Pizza to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="indian-butter"
+              data-name="Butter Chicken Bowl"
+              data-description="Creamy tomato gravy, charred chicken, naan."
+              data-price="329"
+              data-rating="4.9"
+              data-category="Indian Food"
+              data-badge="Comfort food"
+              data-image="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=82"
+                  alt="Butter Chicken Bowl"
+                  loading="lazy"
+                />
+                <span class="product-badge">Comfort food</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="indian-butter"
+                  aria-label="Add Butter Chicken Bowl to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Indian Food</span
+                  ><span class="product-rating"><span>★</span> 4.9</span>
+                </div>
+                <h3 class="product-title">Butter Chicken Bowl</h3>
+                <p class="product-description">
+                  Creamy tomato gravy, charred chicken, naan.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹329</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="indian-butter"
+                    aria-label="Add Butter Chicken Bowl to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="indian-paneer"
+              data-name="Paneer Tikka Masala"
+              data-description="Tandoor-kissed paneer in a rich masala."
+              data-price="289"
+              data-rating="4.2"
+              data-category="Indian Food"
+              data-badge="Veggie"
+              data-image="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=82"
+                  alt="Paneer Tikka Masala"
+                  loading="lazy"
+                />
+                <span class="product-badge">Veggie</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="indian-paneer"
+                  aria-label="Add Paneer Tikka Masala to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Indian Food</span
+                  ><span class="product-rating"><span>★</span> 4.2</span>
+                </div>
+                <h3 class="product-title">Paneer Tikka Masala</h3>
+                <p class="product-description">
+                  Tandoor-kissed paneer in a rich masala.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹289</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="indian-paneer"
+                    aria-label="Add Paneer Tikka Masala to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="indian-dosa"
+              data-name="Masala Dosa Plate"
+              data-description="Crisp golden dosa, potato masala, chutneys."
+              data-price="189"
+              data-rating="3.8"
+              data-category="Indian Food"
+              data-badge="South Indian"
+              data-image="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=700&q=82"
+                  alt="Masala Dosa Plate"
+                  loading="lazy"
+                />
+                <span class="product-badge">South Indian</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="indian-dosa"
+                  aria-label="Add Masala Dosa Plate to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Indian Food</span
+                  ><span class="product-rating"><span>★</span> 3.8</span>
+                </div>
+                <h3 class="product-title">Masala Dosa Plate</h3>
+                <p class="product-description">
+                  Crisp golden dosa, potato masala, chutneys.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹189</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="indian-dosa"
+                    aria-label="Add Masala Dosa Plate to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="biryani-dum"
+              data-name="Dum Chicken Biryani"
+              data-description="Long-grain basmati, slow-cooked dum style."
+              data-price="319"
+              data-rating="4.9"
+              data-category="Biryani"
+              data-badge="Bestseller"
+              data-image="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=700&q=82"
+              data-featured="true"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=700&q=82"
+                  alt="Dum Chicken Biryani"
+                  loading="lazy"
+                />
+                <span class="product-badge">Bestseller</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="biryani-dum"
+                  aria-label="Add Dum Chicken Biryani to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Biryani</span
+                  ><span class="product-rating"><span>★</span> 4.9</span>
+                </div>
+                <h3 class="product-title">Dum Chicken Biryani</h3>
+                <p class="product-description">
+                  Long-grain basmati, slow-cooked dum style.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹319</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="biryani-dum"
+                    aria-label="Add Dum Chicken Biryani to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="biryani-paneer"
+              data-name="Paneer Tikka Biryani"
+              data-description="Smoky paneer, saffron rice, cooling raita."
+              data-price="279"
+              data-rating="4.2"
+              data-category="Biryani"
+              data-badge="Veggie"
+              data-image="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=700&q=82"
+                  alt="Paneer Tikka Biryani"
+                  loading="lazy"
+                />
+                <span class="product-badge">Veggie</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="biryani-paneer"
+                  aria-label="Add Paneer Tikka Biryani to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Biryani</span
+                  ><span class="product-rating"><span>★</span> 4.2</span>
+                </div>
+                <h3 class="product-title">Paneer Tikka Biryani</h3>
+                <p class="product-description">
+                  Smoky paneer, saffron rice, cooling raita.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹279</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="biryani-paneer"
+                    aria-label="Add Paneer Tikka Biryani to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="biryani-mutton"
+              data-name="Hyderabadi Mutton Biryani"
+              data-description="Tender mutton, fragrant spices, fried onions."
+              data-price="399"
+              data-rating="4.4"
+              data-category="Biryani"
+              data-badge="Slow cooked"
+              data-image="https://images.unsplash.com/photo-1642821373181-696a54913e93?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1642821373181-696a54913e93?auto=format&fit=crop&w=700&q=82"
+                  alt="Hyderabadi Mutton Biryani"
+                  loading="lazy"
+                />
+                <span class="product-badge">Slow cooked</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="biryani-mutton"
+                  aria-label="Add Hyderabadi Mutton Biryani to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Biryani</span
+                  ><span class="product-rating"><span>★</span> 4.4</span>
+                </div>
+                <h3 class="product-title">Hyderabadi Mutton Biryani</h3>
+                <p class="product-description">
+                  Tender mutton, fragrant spices, fried onions.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹399</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="biryani-mutton"
+                    aria-label="Add Hyderabadi Mutton Biryani to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="chinese-noodles"
+              data-name="Chilli Garlic Noodles"
+              data-description="Wok-tossed noodles with garlic and greens."
+              data-price="219"
+              data-rating="4.6"
+              data-category="Chinese Food"
+              data-badge="Wok tossed"
+              data-image="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=82"
+                  alt="Chilli Garlic Noodles"
+                  loading="lazy"
+                />
+                <span class="product-badge">Wok tossed</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="chinese-noodles"
+                  aria-label="Add Chilli Garlic Noodles to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Chinese Food</span
+                  ><span class="product-rating"><span>★</span> 4.6</span>
+                </div>
+                <h3 class="product-title">Chilli Garlic Noodles</h3>
+                <p class="product-description">
+                  Wok-tossed noodles with garlic and greens.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹219</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="chinese-noodles"
+                    aria-label="Add Chilli Garlic Noodles to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="chinese-momos"
+              data-name="Crispy Chilli Momos"
+              data-description="Golden dumplings, tossed in a tangy chilli glaze."
+              data-price="199"
+              data-rating="4.5"
+              data-category="Chinese Food"
+              data-badge="Spicy"
+              data-image="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=700&q=82"
+                  alt="Crispy Chilli Momos"
+                  loading="lazy"
+                />
+                <span class="product-badge">Spicy</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="chinese-momos"
+                  aria-label="Add Crispy Chilli Momos to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Chinese Food</span
+                  ><span class="product-rating"><span>★</span> 4.5</span>
+                </div>
+                <h3 class="product-title">Crispy Chilli Momos</h3>
+                <p class="product-description">
+                  Golden dumplings, tossed in a tangy chilli glaze.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹199</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="chinese-momos"
+                    aria-label="Add Crispy Chilli Momos to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="chinese-rice"
+              data-name="Dragon Fried Rice"
+              data-description="Smoky wok-fried rice, spring onion, chilli oil."
+              data-price="229"
+              data-rating="4.5"
+              data-category="Chinese Food"
+              data-badge="Wok tossed"
+              data-image="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=82"
+                  alt="Dragon Fried Rice"
+                  loading="lazy"
+                />
+                <span class="product-badge">Wok tossed</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="chinese-rice"
+                  aria-label="Add Dragon Fried Rice to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Chinese Food</span
+                  ><span class="product-rating"><span>★</span> 4.5</span>
+                </div>
+                <h3 class="product-title">Dragon Fried Rice</h3>
+                <p class="product-description">
+                  Smoky wok-fried rice, spring onion, chilli oil.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹229</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="chinese-rice"
+                    aria-label="Add Dragon Fried Rice to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="snacks-fries"
+              data-name="Truffle Parmesan Fries"
+              data-description="Crispy fries, truffle oil, shaved parmesan."
+              data-price="179"
+              data-rating="4.8"
+              data-category="Snacks"
+              data-badge="Crowd pleaser"
+              data-image="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=82"
+              data-featured="true"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=82"
+                  alt="Truffle Parmesan Fries"
+                  loading="lazy"
+                />
+                <span class="product-badge">Crowd pleaser</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="snacks-fries"
+                  aria-label="Add Truffle Parmesan Fries to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Snacks</span
+                  ><span class="product-rating"><span>★</span> 4.8</span>
+                </div>
+                <h3 class="product-title">Truffle Parmesan Fries</h3>
+                <p class="product-description">
+                  Crispy fries, truffle oil, shaved parmesan.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹179</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="snacks-fries"
+                    aria-label="Add Truffle Parmesan Fries to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="snacks-samosa"
+              data-name="Punjabi Samosa Duo"
+              data-description="Flaky pastry, spiced potato, mint chutney."
+              data-price="99"
+              data-rating="4.6"
+              data-category="Snacks"
+              data-badge="Veggie"
+              data-image="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=82"
+                  alt="Punjabi Samosa Duo"
+                  loading="lazy"
+                />
+                <span class="product-badge">Veggie</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="snacks-samosa"
+                  aria-label="Add Punjabi Samosa Duo to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Snacks</span
+                  ><span class="product-rating"><span>★</span> 4.6</span>
+                </div>
+                <h3 class="product-title">Punjabi Samosa Duo</h3>
+                <p class="product-description">
+                  Flaky pastry, spiced potato, mint chutney.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹99</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="snacks-samosa"
+                    aria-label="Add Punjabi Samosa Duo to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="snacks-wings"
+              data-name="Smoky BBQ Wings"
+              data-description="Sticky, smoky wings with a cool ranch dip."
+              data-price="249"
+              data-rating="4.7"
+              data-category="Snacks"
+              data-badge="Smoky"
+              data-image="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=700&q=82"
+                  alt="Smoky BBQ Wings"
+                  loading="lazy"
+                />
+                <span class="product-badge">Smoky</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="snacks-wings"
+                  aria-label="Add Smoky BBQ Wings to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Snacks</span
+                  ><span class="product-rating"><span>★</span> 4.7</span>
+                </div>
+                <h3 class="product-title">Smoky BBQ Wings</h3>
+                <p class="product-description">
+                  Sticky, smoky wings with a cool ranch dip.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹249</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="snacks-wings"
+                    aria-label="Add Smoky BBQ Wings to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="dessert-choco"
+              data-name="Midnight Chocolate Cake"
+              data-description="Dark cocoa sponge, whipped ganache, sea salt."
+              data-price="189"
+              data-rating="4.8"
+              data-category="Desserts"
+              data-badge="Sweet tooth"
+              data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=82"
+                  alt="Midnight Chocolate Cake"
+                  loading="lazy"
+                />
+                <span class="product-badge">Sweet tooth</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="dessert-choco"
+                  aria-label="Add Midnight Chocolate Cake to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Desserts</span
+                  ><span class="product-rating"><span>★</span> 4.8</span>
+                </div>
+                <h3 class="product-title">Midnight Chocolate Cake</h3>
+                <p class="product-description">
+                  Dark cocoa sponge, whipped ganache, sea salt.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹189</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="dessert-choco"
+                    aria-label="Add Midnight Chocolate Cake to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="dessert-cheesecake"
+              data-name="Baked Cheesecake"
+              data-description="Silky New York style with berry compote."
+              data-price="219"
+              data-rating="4.6"
+              data-category="Desserts"
+              data-badge="House made"
+              data-image="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=82"
+                  alt="Baked Cheesecake"
+                  loading="lazy"
+                />
+                <span class="product-badge">House made</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="dessert-cheesecake"
+                  aria-label="Add Baked Cheesecake to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Desserts</span
+                  ><span class="product-rating"><span>★</span> 4.6</span>
+                </div>
+                <h3 class="product-title">Baked Cheesecake</h3>
+                <p class="product-description">
+                  Silky New York style with berry compote.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹219</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="dessert-cheesecake"
+                    aria-label="Add Baked Cheesecake to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="dessert-icecream"
+              data-name="Salted Caramel Sundae"
+              data-description="Vanilla bean, salted caramel, crunchy praline."
+              data-price="159"
+              data-rating="4.7"
+              data-category="Desserts"
+              data-badge="Chilled"
+              data-image="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=82"
+                  alt="Salted Caramel Sundae"
+                  loading="lazy"
+                />
+                <span class="product-badge">Chilled</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="dessert-icecream"
+                  aria-label="Add Salted Caramel Sundae to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Desserts</span
+                  ><span class="product-rating"><span>★</span> 4.7</span>
+                </div>
+                <h3 class="product-title">Salted Caramel Sundae</h3>
+                <p class="product-description">
+                  Vanilla bean, salted caramel, crunchy praline.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹159</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="dessert-icecream"
+                    aria-label="Add Salted Caramel Sundae to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="drink-coldbrew"
+              data-name="Velvet Cold Brew"
+              data-description="Slow-steeped coffee, smooth and ice cold."
+              data-price="149"
+              data-rating="4.8"
+              data-category="Beverages"
+              data-badge="Caffeine fix"
+              data-image="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=82"
+                  alt="Velvet Cold Brew"
+                  loading="lazy"
+                />
+                <span class="product-badge">Caffeine fix</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="drink-coldbrew"
+                  aria-label="Add Velvet Cold Brew to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Beverages</span
+                  ><span class="product-rating"><span>★</span> 4.8</span>
+                </div>
+                <h3 class="product-title">Velvet Cold Brew</h3>
+                <p class="product-description">
+                  Slow-steeped coffee, smooth and ice cold.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹149</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="drink-coldbrew"
+                    aria-label="Add Velvet Cold Brew to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="drink-lemonade"
+              data-name="Mint Lime Cooler"
+              data-description="Fresh lime, mint, a little fizz, lots of joy."
+              data-price="99"
+              data-rating="4.6"
+              data-category="Beverages"
+              data-badge="Refreshing"
+              data-image="https://images.unsplash.com/photo-1555949366-819808d99159?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1555949366-819808d99159?auto=format&fit=crop&w=700&q=82"
+                  alt="Mint Lime Cooler"
+                  loading="lazy"
+                />
+                <span class="product-badge">Refreshing</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="drink-lemonade"
+                  aria-label="Add Mint Lime Cooler to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Beverages</span
+                  ><span class="product-rating"><span>★</span> 4.6</span>
+                </div>
+                <h3 class="product-title">Mint Lime Cooler</h3>
+                <p class="product-description">
+                  Fresh lime, mint, a little fizz, lots of joy.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹99</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="drink-lemonade"
+                    aria-label="Add Mint Lime Cooler to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-id="drink-mango"
+              data-name="Mango Lassi"
+              data-description="Alphonso mango blended with creamy yoghurt."
+              data-price="119"
+              data-rating="4.8"
+              data-category="Beverages"
+              data-badge="Seasonal"
+              data-image="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=82"
+              data-featured="false"
+            >
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=82"
+                  alt="Mango Lassi"
+                  loading="lazy"
+                />
+                <span class="product-badge">Seasonal</span>
+                <button
+                  class="wish-btn"
+                  data-action="favourite"
+                  data-id="drink-mango"
+                  aria-label="Add Mango Lassi to favourites"
+                  aria-pressed="false"
+                >
+                  ♡
+                </button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span class="product-category">Beverages</span
+                  ><span class="product-rating"><span>★</span> 4.8</span>
+                </div>
+                <h3 class="product-title">Mango Lassi</h3>
+                <p class="product-description">
+                  Alphonso mango blended with creamy yoghurt.
+                </p>
+                <div class="product-bottom">
+                  <span class="product-price">₹119</span
+                  ><button
+                    class="add-btn"
+                    data-action="add"
+                    data-id="drink-mango"
+                    aria-label="Add Mango Lassi to cart"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
           <div class="menu-empty hidden" id="menuEmpty">
             <span>⌕</span>
             <h3>No bites found</h3>
@@ -258,7 +1749,8 @@
               alt="Friends sharing a delicious meal together"
             />
             <div class="about-photo-tag">
-              <strong>Crafted with Care.</strong><span>Served with a Smile😃.</span>
+              <strong>Crafted with Care.</strong
+              ><span>Served with a Smile😃.</span>
             </div>
           </div>
           <div class="about-copy">
@@ -266,8 +1758,9 @@
             <h2><em>Good food </em>brings<br />us <em>together.</em></h2>
             <p>
               At Bitezone, we believe the best moments happen around great food.
-              We partner with neighbourhood kitchens inside LPU to bring you fresh,
-              feel-good favourites made with ingredients you can trust fully.
+              We partner with neighbourhood kitchens inside LPU to bring you
+              fresh, feel-good favourites made with ingredients you can trust
+              fully.
             </p>
             <div class="about-stats">
               <div>
@@ -294,7 +1787,7 @@
         <div class="container">
           <div class="section-heading centered-heading">
             <div class="eyebrow">THE LOVE IS REAL</div>
-            <h2>What other  <em>  Student Says !</em></h2>
+            <h2>What other <em> Student Says !</em></h2>
             <p>Don't just take our word for it.</p>
           </div>
           <div class="testimonial-grid">
@@ -398,8 +1891,11 @@
                   Can I change or cancel my order?<span>+</span>
                 </summary>
                 <p>
-                  <em>This is a college project which only stores demo orders in your browser. For a
-                  real order, contact the restaurant directly.</em>
+                  <em
+                    >This is a college project which only stores demo orders in
+                    your browser. For a real order, contact the restaurant
+                    directly.</em
+                  >
                 </p>
               </details>
             </div>
@@ -691,7 +2187,10 @@
       <div class="success-check">✓</div>
       <div class="eyebrow">ORDER CONFIRMED</div>
       <h2 id="successTitle">This is going to<br />be <em>delicious.</em></h2>
-      <p>Your order has been received and the kitchen is getting ready to serve you !.</p>
+      <p>
+        Your order has been received and the kitchen is getting ready to serve
+        you !.
+      </p>
       <div class="success-order-id">
         ORDER ID <strong id="successOrderId"></strong>
       </div>
